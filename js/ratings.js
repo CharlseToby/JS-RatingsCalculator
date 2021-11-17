@@ -1,8 +1,8 @@
 function collect_ratings() {
-    let ratings = {
-        sum: 0,
-        count: 0,
-        average: 0,
+    const ratings = {
+        'sum': 0,
+        'count': 0,
+        'average': 0,
     };
     let rating = 0;
 
@@ -24,7 +24,7 @@ function collect_ratings() {
 }
 //add event listener that listens for a change in the document
 document.addEventListener("change", () => {
-    ratings = collect_ratings();
+    const ratings = collect_ratings();
     document.querySelector("#average").value = ratings.average.toFixed(2);
 
 });
