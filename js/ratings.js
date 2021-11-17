@@ -25,9 +25,6 @@ function collect_ratings() {
 //add event listener that listens for a change in the document
 document.addEventListener("change", () => {
     ratings = collect_ratings();
-    //console.log(ratings);
-
-    ratings.average = ratings.average.toFixed(2);
-    document.querySelector("#average").value = ratings.average;
+    document.querySelector("#average").value = ratings.average.toFixed(2);
 
 });
